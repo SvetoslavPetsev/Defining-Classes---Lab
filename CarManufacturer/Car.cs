@@ -8,8 +8,8 @@
         private string make;
         private string model;
         private int year;
-        private decimal fuelQuantity;
-        private decimal fuelConsumption;
+        private double fuelQuantity;
+        private double fuelConsumption;
         private Engine engine;
         private Tire[] tire;
 
@@ -32,8 +32,8 @@
             string make,
             string model,
             int year,
-            decimal fuelQuantity,
-            decimal fuelConsumption)
+            double fuelQuantity,
+            double fuelConsumption)
             : this(make, model, year) //this target provius ctor with 3 parametrs
         {
             this.FuelQuantity = fuelQuantity;
@@ -44,8 +44,8 @@
             string make,
             string model,
             int year,
-            decimal fuelQuantity,
-            decimal fuelConsumption,
+            double fuelQuantity,
+            double fuelConsumption,
             Engine engine,
             Tire[] tires)
             : this(make, model, year, fuelQuantity, fuelConsumption)
@@ -87,7 +87,7 @@
                 this.year = value;
             }
         }
-        public decimal FuelQuantity
+        public double FuelQuantity
         {
             get
             {
@@ -98,7 +98,7 @@
                 this.fuelQuantity = value;
             }
         }
-        public decimal FuelConsumption
+        public double FuelConsumption
         {
             get
             {
