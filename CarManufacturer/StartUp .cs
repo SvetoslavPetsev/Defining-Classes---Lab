@@ -45,8 +45,8 @@
                 string make = info[0];
                 string model = info[1];
                 int year = int.Parse(info[2]);
-                decimal fuelQuantity = decimal.Parse(info[3]);
-                decimal fuelConsumtion = decimal.Parse(info[4]);
+                double fuelQuantity = double.Parse(info[3]);
+                double fuelConsumtion = double.Parse(info[4]);
                 Engine engine = engineList[int.Parse(info[5])];
                 Tire[] tires = tiresList[int.Parse(info[6])];
 
